@@ -52,7 +52,7 @@ To get started, clone this repository and use the provided installer script. The
 
 ### Installation Script Guide
 
-The installation script (`install_smart_dns.sh`) will:
+The installation script (`dns.sh`) will:
 1. Check if the operating system is Ubuntu or Debian. If not, it will stop the installation.
 2. Prompt you to confirm the installation.
 3. Ask you to provide:
