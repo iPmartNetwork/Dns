@@ -1,0 +1,16 @@
+services:
+  cryptroute-dns-proxy:
+    image: cryptroute/cryptroute-dns-proxy:v3
+    container_name: cryptroute-dns-proxy
+    restart: always
+    network_mode: "host"   # Use host network mode to avoid binding issues
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - DNS_SERVER_IP=<DNS_SERVER_IP>
+      - DNS_SERVER_IPV6=<DNS_SERVER_IPV6>
+      - NETWORK_INTERFACE=<NETWORK_INTERFACE>
+      - NETWORK_INTERFACE=<NETWORK_INTERFACE_IPV6>
+      - WAN_HOSTNAME=<WAN_HOSTNAME> 
+    entrypoint: ["/start.sh"]
