@@ -89,7 +89,7 @@ To remove Smart DNS Proxy, follow these steps:
 
 1. **Stop and Remove Containers**:
     ```bash
-    cd smart-dns-proxy
+    cd Dns
     docker-compose down
     ```
 
